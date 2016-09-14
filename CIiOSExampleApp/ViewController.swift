@@ -20,6 +20,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func crashLog(sender: AnyObject) {
+        
+        // Below code will crash just to check crash logs on Buddybuild 
+        var someInts = [Int]()
+        someInts.removeAtIndex(0)
 
-}
+    }
+
+    }
 
