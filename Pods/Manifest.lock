@@ -1,0 +1,27 @@
+PODS:
+  - Alamofire (3.5.0)
+  - AlecrimCoreData (4.2.1)
+  - Bond (4.3.1)
+  - BXProgressHUD (1.8.0):
+    - PinAuto
+  - IQKeyboardManagerSwift (4.0.5)
+  - PinAuto (1.7)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.2)
+  - AlecrimCoreData (~> 4.1)
+  - Bond (~> 4.3)
+  - BXProgressHUD (~> 1.0)
+  - IQKeyboardManagerSwift (~> 4.0)
+
+SPEC CHECKSUMS:
+  Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
+  AlecrimCoreData: 4ed303b516446238663db44c129ebb7c5887b825
+  Bond: 55903fc67f09e8e49791a657163cabba1d6fb29d
+  BXProgressHUD: 4d0e29b7bd05c546ce803755c213addbb7423fdc
+  IQKeyboardManagerSwift: 41fd3a45a2cdb2a0e031af697708a95b865068a1
+  PinAuto: 648a843c526307c079c568667cd782b2aed1ee07
+
+PODFILE CHECKSUM: cbf592960289302260a1a341802b4df028c6cf2f
+
+COCOAPODS: 1.0.1
