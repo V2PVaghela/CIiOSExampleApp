@@ -14,12 +14,12 @@ dependencies:
         CODE_SIGN_IDENTITY=
         PROVISIONING_PROFILE=
         -sdk iphonesimulator
-#-destination 'platform=iOS Simulator,OS=9.0,name=iPhone 6'
         -workspace CIiOSExampleApp.xcworkspace
         -scheme "CIiOSExampleApp"
 #        clean build test |
 #      tee $CIRCLE_ARTIFACTS/xcode_raw.log |
 #      xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
+#-destination 'platform=iOS Simulator,OS=9.0,name=iPhone 6'
     - pod install:
         timeout: 300
 #deployment:
