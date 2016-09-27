@@ -8,9 +8,9 @@ deployment:
           --notes            "CircleCI build 1.0"
 
 machine:
-xcode:
-version: 7.3.1
+	xcode:
+	version: 7.3.1
 
 test:
-override:
-- set -o pipefail && xcodebuild -workspace 'CIiOSExampleApp.xcworkspace' -scheme 'CIiOSExampleApp' clean build test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= PROVISIONING_PROFILE= | tee $CIRCLE_ARTIFACTS/xcode_raw.log | xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
+	override:
+		- set -o pipefail && xcodebuild -workspace 'CIiOSExampleApp.xcworkspace' -scheme 'CIiOSExampleApp' clean build test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.0' CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= PROVISIONING_PROFILE= | tee $CIRCLE_ARTIFACTS/xcode_raw.log | xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
