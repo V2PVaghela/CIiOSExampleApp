@@ -13,4 +13,4 @@ machine:
 
 test:
   override:
-- set -o pipefail && xcodebuild CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= PROVISIONING_PROFILE= -workspace 'CIiOSExampleApp.xcworkspace' -scheme 'CIiOSExampleApp' -sdk iphonesimulator -destination 'id=4FFC543-D9A3-4E6F-BFA4-6F62180F3425' clean build test | tee $CIRCLE_ARTIFACTS/xcode_raw.log | xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
+	- set -o pipefail && xcodebuild CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= PROVISIONING_PROFILE= -workspace 'CIiOSExampleApp.xcworkspace' -scheme 'CIiOSExampleApp' -sdk iphonesimulator -destination 'id=4FFC543-D9A3-4E6F-BFA4-6F62180F3425' clean build test | tee $CIRCLE_ARTIFACTS/xcode_raw.log | xcpretty --color --report junit --output $CIRCLE_TEST_REPORTS/xcode/results.xml
