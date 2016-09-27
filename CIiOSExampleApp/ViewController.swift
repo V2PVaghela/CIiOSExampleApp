@@ -27,6 +27,8 @@ class ViewController: UIViewController {
         someInts.removeAtIndex(0)
 
     }
-
+    func testCheckValidUserName(userName: String) -> Bool{
+        return true
     }
+}
 
