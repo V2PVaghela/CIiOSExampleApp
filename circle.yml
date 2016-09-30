@@ -5,7 +5,7 @@ deployment:
       - gym
       - ipa distribute:hockeyapp
           --token            "3063c351a48a4d7d90dbffb0092abfc5"
-          --notes            "CircleCI build 1.2”
+          --notes            "CircleCI build 1.2"
 
 machine:
 environment:
