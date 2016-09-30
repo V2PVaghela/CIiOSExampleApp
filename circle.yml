@@ -8,10 +8,11 @@ deployment:
           --notes            "CircleCI build 1.2"
 
 machine:
-  GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: V2Solutions, Inc. (4G2KHJ47KE)"
-environment:
   xcode:
     version: 7.3.1
+  environment:
+    GYM_CODE_SIGNING_IDENTITY: "iPhone Distribution: V2Solutions, Inc. (4G2KHJ47KE)"
+
 test:
   override:
       - set -o pipefail && xcodebuild -workspace 'CIiOSExampleApp.xcworkspace' -scheme 'CIiOSExampleApp' clean build test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3'
