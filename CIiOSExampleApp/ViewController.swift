@@ -25,10 +25,10 @@ class ViewController: UIViewController {
         // Below code will crash just to check crash logs on Buddybuild 
         var someInts = [Int]()
         someInts.removeAtIndex(0)
-
     }
-    func testCheckValidUserName(userName: String) -> Bool{
+    
+    func testCheckValidUserName(userName: String) -> Bool {
         return true
     }
+    
 }
-

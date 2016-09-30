@@ -171,6 +171,7 @@
 				000516521D896CD1007C7F43 /* Resources */,
 				05AC47346C2451AFF554EE99 /* [CP] Embed Pods Frameworks */,
 				6AC29F08F1BB241389E2DBE7 /* [CP] Copy Pods Resources */,
+				8381EDDF574C79E0D8752FF5 /* Tailor */,
 			);
 			buildRules = (
 			);
@@ -303,6 +304,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CIiOSExampleApp/Pods-CIiOSExampleApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		8381EDDF574C79E0D8752FF5 /* Tailor */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Tailor;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if hash tailor 2>/dev/null; then\n  tailor --except=trailing-whitespace CIiOSExampleApp\nelse\n  echo \"warning: Please install Tailor from https://tailor.sh\"\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
